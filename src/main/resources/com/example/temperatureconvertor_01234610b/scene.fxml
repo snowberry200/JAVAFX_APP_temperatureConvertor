@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.temperatureconvertor_01234610b.Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="225.0" layoutY="4.0" prefHeight="393.0" prefWidth="75.0">
+         <children>
+            <Slider fx:id="sliderController" cache="true" majorTickUnit="10.0" minorTickCount="10" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" style="-fx-border-color: #0000FF;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Slider>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Text layoutX="7.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Degree Celsius">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label fx:id="degreeController" layoutX="30.0" layoutY="61.0" text="Label">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="fahrenheitController" layoutX="30.0" layoutY="170.0" text="Label">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="7.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahrenheit">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="degreeTextFieldController" layoutX="349.0" layoutY="71.0" prefHeight="39.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="fahrenheitTextFieldController" editable="false" layoutX="349.0" layoutY="169.0" prefHeight="39.0" prefWidth="237.0" />
+      <Button fx:id="convertButton" layoutX="349.0" layoutY="247.0" mnemonicParsing="false" onAction="#onConvert" prefHeight="39.0" prefWidth="237.0" style="-fx-background-color: #0000FF;" text="Convert" textFill="#fcfafa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="349.0" layoutY="342.0" mnemonicParsing="false" onAction="#onReset" prefHeight="39.0" prefWidth="237.0" style="-fx-background-color: #FF0000;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fill="#04b1eb" fontSmoothingType="LCD" layoutX="445.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(°C)" wrappingWidth="45.0">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#07aaeb" fontSmoothingType="LCD" layoutX="449.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(°F)" wrappingWidth="45.0">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets left="10.0" right="10.0" />
+   </opaqueInsets>
+</AnchorPane>
